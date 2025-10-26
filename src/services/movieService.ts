@@ -12,6 +12,7 @@ const apiClient = axios.create({
       Authorization: `Bearer ${import.meta.env.VITE_TMDB_TOKEN}`,
       Accept: "application/json",
   },
+  
 });
 
 export const fetchMovies = async (query: string): Promise<Movie[]> => {
